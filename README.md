@@ -64,7 +64,7 @@ So now I had the webserver binary and it’s configuration file, which was found
 
 The lighttpd codebase is quite mature and has been audited by a lot of people way smarter than me, so I always analyze the third-party code first. The lighttpd module `mod_cbn_web` looks like it could be interesting, and I will take a look at that next. However, it is important not to disregard the lighttpd binary completely since it could be modified!
 
-The mod_cbn_web binary is located at `/lib/mod_cbn_web.so`. Cracking it open in Ghidra and navigating to the mod_cbn_web_plugin_init function reveals some function pointers.
+The `mod_cbn_web` binary is located at `/lib/mod_cbn_web.so`. Cracking it open in Ghidra and navigating to the `mod_cbn_web_plugin_init` function reveals some function pointers.
 
 ![image](https://user-images.githubusercontent.com/25673723/184678762-0895d869-4090-4059-94c4-2eabe40d3924.png)
 
